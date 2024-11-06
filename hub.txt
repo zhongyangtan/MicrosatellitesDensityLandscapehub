@@ -1,0 +1,6 @@
+hub MicrosatellitesDensityLandscape
+shortLabel Microsatellites Density Landscape
+longLabel Microsatellites Density Landscape
+genomesFile genomes.txt
+email zhongyangtan@yeah.net
+descriptionUrl MicrosatellitesDensityLandscape.html

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsatellite Density Peaks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .content-section {
+            margin-bottom: 20px;
+        }
+        .content-section p {
+            margin: 10px 0;
+        }
+        .statistics, .references {
+            padding-left: 20px;
+        }
+        .references a {
+            color: #1a0dab;
+        }
+        hr {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><b>Including Sub-Tracks</b></h1>
+    <h2> HMDP, MMDP, LMDP</h2>
+    <hr>
+
+    <div class="content-section">
+        <h3><b>Description</b></h3>
+        <p>Microsatellites, also known as Short Tandem Repeats (STRs), form distinct density landscapes across the human genome. These landscapes represent the relative density of STRs per kilobase along the complete reference Human Genome <i>GRCh38</i>.</p>
+        <p>STRs tend to cluster in characteristic patterns, resulting in pronounced microsatellite density peaks distributed throughout the genome. These peaks can be further classified into three categories:</p>
+        <ul>
+            <li><b>High Microsatellite Density Peak (HMDP)</b></li>
+            <li><b>Middle Microsatellite Density Peak (MMDP)</b></li>
+            <li><b>Low Microsatellite Density Peak (LMDP)</b></li>
+        </ul>
+        <p>Thus, the primary track includes four sub-tracks:</p>
+        <ul>
+            <li>STR Density Landscape</li>
+            <li>HMDP</li>
+            <li>MMDP</li>
+            <li>LMDP</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="content-section">
+        <h3><b>Methods</b></h3>
+        <p>The <i>GRCh38</i> genome was divided into 1kb resolution units (bins) using a differential method. The local microsatellite relative density in each 1kb unit, referred to as Position-related Differential-unit 1kb (pD1), was calculated with the following formula:</p>
+        <p><i>pD1RDi = mi / 1kb × 1000</i></p>
+    </div>
+
+    <hr>
+
+    <div class="content-section">
+        <h3><b>Track Statistics Summary</b></h3>
+        <div class="statistics">
+            <p><b>Genome Assembled Size:</b>  3,088,269,832 bp</p>
+            <p><b>Total Peak Count:</b> 208,638</p>
+            <p><b>HMDP Count:</b> 3,480</p>
+            <p><b>MMDP Count:</b> 26,310</p>
+            <p><b>LMDP Count:</b> 178,848</p>
+        </div>
+    </div>
+
+    <p><b>Author: Zhongyang Tan</b></p>
+
+    <hr>
+
+    <div class="content-section">
+        <h3><b>References</b></h3>
+        <div class="references">
+            <p>
+                1. Xia Y, Li D, Chen T, Pan S, Huang H, Zhang W, Liang Y, Fu Y, Peng Z, Zhang H et al. 
+                Microsatellite density landscapes illustrate short tandem repeats aggregation in the complete reference human genome. 
+                <i>BMC Genomics</i>. 2024; 25(1):960. 
+                PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/39402450/" target="_blank">39402450</a>; 
+                DOI: <a href="https://doi.org/10.1186/s12864-024-10843-9" target="_blank">10.1186/s12864-024-10843-9</a>
+            </p>
+            <p>
+                2. Li D, Pan S, Zhang H, Fu Y, Peng Z, Zhang L, et al. 
+                A comprehensive microsatellite landscape of human Y-DNA at kilobase resolution. 
+                <i>BMC Genomics</i>. 2021; 22(1):76. 
+                PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/33482734/" target="_blank">33482734</a>; 
+                PMCID: <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-021-07389-5" target="_blank">PMC7821415</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

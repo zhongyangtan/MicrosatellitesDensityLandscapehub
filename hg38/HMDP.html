@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMDP Track Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .content-section {
+            margin-bottom: 20px;
+        }
+        .content-section p {
+            margin: 10px 0;
+        }
+        .statistics, .references {
+            padding-left: 20px;
+        }
+        .references a {
+            color: #1a0dab;
+        }
+        hr {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        .main-table {
+            margin-top: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h2><b>Description</b></h2>
+    <p>Total 3,480 High Microsatellites Density Peaks (HMDPs) were identified on the 24 chromosomes of GRCh38. This track shows the main motif types, nomenclature and chromosomal locations of HMDPs</p>
+
+    <h2><b>Methods</b></h2>
+    <p>When the local sequence region with microsatellite relative density value, i.e. position-related Differential-unit1kb (D1) Relative Density (pD1RD), exceeds or equals to 300, the region is identified as a High Microsatellites Density Peak (HMDP). Each short vertical line or small square represents an HMDP, and color is used to distinguish different motif types. The width of the square represents the size of the HMDP region on the chromosome. The HMDP name in pack and full modes includes reference genome, chromosome, order of HMDP, span of the corresponding chromosome region, and main motif type.</p>
+
+    <p>For example: <b>GRCh38-01-HMDP4m2([AATGG]h)</b>, indicating the 4th HMDP of GRCh38 on chromosome 1 spanning 2 kb region with  <i>AATGG </i> main motif type.</p>
+
+    <h2><b>Display Conventions and Configuration of HMDP</b></h2>
+    <table class="main-table">
+        <thead>
+            <tr>
+                <th>Main Motif Type (MMT)</th>
+                <th>Colors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mono-MMT</td>
+                <td>teal <div style="display:inline-block; width:20px; height:10px; background-color:rgb(0,255,255); margin-left:10px;"></div></td> <!-- 青色 -->
+            </tr>
+            <tr>
+                <td>di-MMT</td>
+                <td>dark <div style="display:inline-block; width:20px; height:10px; background-color:rgb(0,0,0); margin-left:10px;"></div></td> <!-- 黑色 -->
+            </tr>
+            <tr>
+                <td>tri-MMT</td>
+                <td>orange <div style="display:inline-block; width:20px; height:10px; background-color:rgb(255,128,0); margin-left:10px;"></div></td> <!-- 正宗橙色 -->
+            </tr>
+            <tr>
+                <td>tetra-MMT</td>
+                <td>yellow <div style="display:inline-block; width:20px; height:10px; background-color:rgb(255,255,0); margin-left:10px;"></div></td> <!-- 黄色 -->
+            </tr>
+            <tr>
+                <td>penta-MMT</td>
+                <td>green <div style="display:inline-block; width:20px; height:10px; background-color:rgb(0,255,0); margin-left:10px;"></div></td> <!-- 绿色 -->
+            </tr>
+            <tr>
+                <td>hexa-MMT</td>
+                <td>blue <div style="display:inline-block; width:20px; height:10px; background-color:rgb(0,0,255); margin-left:10px;"></div></td> <!-- 蓝色 -->
+            </tr>
+            <tr>
+                <td>AG-MMT</td>
+                <td>red <div style="display:inline-block; width:20px; height:10px; background-color:rgb(255,0,0); margin-left:10px;"></div></td> <!-- 红色 -->
+            </tr>
+            <tr>
+                <td>TC-MMT</td>
+                <td>purple <div style="display:inline-block; width:20px; height:10px; background-color:rgb(128,0,128); margin-left:10px;"></div></td> <!-- 紫色 -->
+            </tr>
+            <tr>
+                <td>Mix Motif Type (Mix)</td>
+                <td>grey <div style="display:inline-block; width:20px; height:10px; background-color:rgb(169,169,169); margin-left:10px;"></div></td> <!-- 灰色 -->
+            </tr>
+        </tbody>
+    </table>
+
+    <h2><b>Track Statistics Summary</b></h2>
+    <div class="statistics">
+        <p><b>Genome Assembled Size:</b> 3,088,269,832 bp</p>
+        <p><b>HMDP Count:</b> 3,480 </p>
+        <p><b>Author: Zhongyang Tan</b></p>
+    </div>
+
+    <h2><b>References</b></h2>
+    <div class="content-section">
+            <p>
+                1. Xia Y, Li D, Chen T, Pan S, Huang H, Zhang W, Liang Y, Fu Y, Peng Z, Zhang H et al. 
+                Microsatellite density landscapes illustrate short tandem repeats aggregation in the complete reference human genome. 
+                <i>BMC Genomics</i>. 2024; 25(1):960. 
+                PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/39402450/" target="_blank">39402450</a>; 
+                DOI: <a href="https://doi.org/10.1186/s12864-024-10843-9" target="_blank">10.1186/s12864-024-10843-9</a>
+            </p>
+            <p>
+                2. Li D, Pan S, Zhang H, Fu Y, Peng Z, Zhang L, et al. 
+                A comprehensive microsatellite landscape of human Y-DNA at kilobase resolution. 
+                <i>BMC Genomics</i>. 2021; 22(1):76. 
+                PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/33482734/" target="_blank">33482734</a>; 
+                PMCID: <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-021-07389-5" target="_blank">PMC7821415</a>
+            </p>
+
+    </div>
+</body>
+</html>
