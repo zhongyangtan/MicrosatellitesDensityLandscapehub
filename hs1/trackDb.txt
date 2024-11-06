@@ -3,6 +3,7 @@ html Density.html
 bigDataUrl hs1Landscape.bw
 shortLabel Landscape of STR Density
 longLabel pD1RD of Microsatellite (6,3,3,3,3,3)
+autoScale on
 type bigWig
 color 255,0,0
 visibility full
@@ -13,6 +14,7 @@ html HMDP.html
 bigDataUrl hs1HMDP.bb
 shortLabel HMDP
 longLabel High Microsatellites Density Peaks
+autoScale on
 type bigBed 9
 visibility dense
 priority 2
@@ -23,6 +25,7 @@ bigDataUrl hs1MMDP.bb
 itemRgb on
 shortLabel MMDP
 longLabel Middle Microsatellites Density Peaks
+autoScale on
 type bigBed 9
 visibility dense
 priority 3
@@ -33,6 +36,7 @@ bigDataUrl hs1LMDP.bb
 itemRgb on
 shortLabel LMDP
 longLabel Low Microsatellites Density Peaks
+autoScale on
 type bigBed 9
 visibility dense
 priority 4
