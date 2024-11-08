@@ -45,5 +45,5 @@ itemRgb on
 shortLabel Gap Locations 
 longLabel Gap Locations 
 type bigBed 9
-visibility pack
+visibility dense
 priority 5
